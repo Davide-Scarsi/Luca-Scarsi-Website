@@ -486,6 +486,8 @@ animation: 200s para infinite linear;
   border-radius: 30%;
   height: 550px;
   width: 550px;
+  display: flex;
+  justify-content: center;
 }
 
 .container-fotoluca-box-up{
@@ -575,7 +577,6 @@ animation: 200s para infinite linear;
     right: 0;
   }
 
-
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
@@ -611,6 +612,37 @@ animation: 200s para infinite linear;
 
 }
 
+@media (max-width: 400px) {
+
+
+  #scrolling-bg {
+    background-position: 
+      0 158%,
+      0 100%,
+      0 12px,
+      0 6px;
+    background-size: 
+      1000px,
+      800px,
+      500px 200px,
+      400px 260px;
+    animation: 200s para infinite linear;
+    }
+    
+    @keyframes para {
+    100% {
+      background-position: 
+        -5000px 158%,
+        -800px 100%,
+        500px 12px,
+        400px 6px;
+      }
+    }
+
+
+
+}
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -624,7 +656,7 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 100px;
 }
 
 .section-title h2 {
@@ -1178,6 +1210,10 @@ section {
 .portfolio .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
 }
+
+/* CAROSELLO - GALLERIA IMMAGINI */
+   
+
 
 /*--------------------------------------------------------------
 # Portfolio Details
