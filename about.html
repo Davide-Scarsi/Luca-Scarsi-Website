@@ -35,7 +35,7 @@
   ======================================================== -->
 </head>
 
-<body>
+<body class="body-about">
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
@@ -75,14 +75,14 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>La mia filosofia</h2>
-          <p>La luce è vita nell'agricoltura ed è fondamentale anche in fotografia, portandoti a "guardare" il mondo che ti circonda in modo diverso.
+          <span class="backgroud-colour-white"> Mi presento </span>
+          <p class="backgroud-colour-white"> La mia passione per la fortografia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, suscipit cumque et tenetur hic rem impedit laboriosam debitis fuga quis. Voluptas exercitationem cupiditate nam, facilis beatae quidem vel eius! Cum.
           </p>
         </div>
 
         <div class="row">
           <div class="col-lg-4">
-            <img src="assets/foto/luca.jpg" class="img-fluid" alt="">
+            <img src="assets/foto/luca_2.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
             <h3>I miei soggetti</h3>
@@ -186,31 +186,39 @@
     <section id="facts" class="facts">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2>Statistiche</h2>
-          <p>Tengo aggiornati nel tempo i miei piccoli e grandi successi</p>
+        <div class="section-title d-flex flex-column align-items-center">
+          <span class="backgroud-colour-white span-h2">Statistiche</span>
+          <span class="backgroud-colour-white span-p">Tengo aggiornati nel tempo i miei piccoli e grandi successi</span>
         </div>
 
-        <div class="row counters">
+        <div class="row counters d-flex justify-content-between">
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Clienti</p>
+            <div class="facts-box">
+              <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Clienti</p>
+            </div>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Mostre</p>
+            <div class="facts-box">
+              <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Mostre</p>
+            </div>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="23658" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Scatti unici</p>
+            <div class="facts-box">
+              <span data-purecounter-start="0" data-purecounter-end="23658" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Scatti unici</p>
+            </div>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-purecounter-start="0" data-purecounter-end="550" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Tecniche sperimentate</p>
+            <div class="facts-box">
+              <span data-purecounter-start="0" data-purecounter-end="550" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Tecniche sperimentate</p>
+            </div>
           </div>
 
         </div>
@@ -222,24 +230,24 @@
     <section id="testimonials" class="testimonials">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2>Collaboratori</h2>
-          <p>Un ringraziamento a tutti quelli che collaborano con me a questo progetto</p>
+        <div class="section-title d-flex flex-column align-items-center">
+          <span class="backgroud-colour-white span-h2">Collaboratori</span>
+          <span class="backgroud-colour-white span-p">Un ringraziamento a tutti quelli che collaborano con me a questo progetto</span>
         </div>
 
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
 
             <div class="swiper-slide">
-              <div class="testimonial-item">
+              <div class="testimonial-item d-flex flex-column align-items-center">
                 <img src="assets/foto/davide.png" class="testimonial-img" alt="">
-                <h3>Davide Scarsi</h3>
-                <h4>Frontender</h4>
-                <p>
+                <span class="backgroud-colour-white span-h3">Davide Scarsi</span>
+                <span class="backgroud-colour-white span-p">Frontender</span>
+                <span class="backgroud-colour-white span-p">
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                   Un piccolo contributo alla realizzazione del sito web
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
+                </span>
               </div>
             </div><!-- End testimonial item -->
 
@@ -308,21 +316,6 @@
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Kelly</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

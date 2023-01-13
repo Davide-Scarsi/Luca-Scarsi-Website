@@ -13,6 +13,10 @@ body {
   color: #444444;
 }
 
+:root {
+  --verde: #02795B;
+}
+
 a {
   color: #1dee27;
   text-decoration: none;
@@ -101,7 +105,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #34b7a7;
+  background: var(--verde);
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -229,7 +233,7 @@ h6 {
   height: 2px;
   bottom: -5px;
   left: 0;
-  background-color: #34b7a7;
+  background-color: var(--verde);
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -484,8 +488,8 @@ animation: 200s para infinite linear;
   position: relative;
   z-index: 10;
   border-radius: 30%;
-  height: 550px;
-  width: 550px;
+  height: 450px;
+  width: 450px;
   display: flex;
   justify-content: center;
 }
@@ -494,8 +498,8 @@ animation: 200s para infinite linear;
   position: absolute;
   top: 0px;
   z-index: -2;
-  height: 290px;
-  width: 550px;
+  height: 225px;
+  width: 450px;
   border-top-left-radius: 50%;
   border-top-right-radius: 70%;
   background-color: #2390bb38;
@@ -505,8 +509,8 @@ animation: 200s para infinite linear;
   position: absolute;
   bottom: 0px;
   z-index: -1;
-  height: 290px;
-  width: 550px;
+  height: 225px;
+  width: 450px;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 70%;
   background-color: #07411a75;
@@ -515,7 +519,7 @@ animation: 200s para infinite linear;
 .fotoluca {
   position: absolute;
   top: 0px;
-  max-height: 500px;
+  max-height: 420px;
 }
 
 
@@ -656,7 +660,7 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .section-title h2 {
@@ -739,10 +743,47 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.backgroud-colour-white {
+  background-color: white;
+  padding: 0 10px;
+  border: 1px solid black;
+}
+
+.body-about {
+  background-image: url(../foto/sotto_il_ponte.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position-y: -7%;
+  background-size:cover;
+}
+
+.img-fluid {
+  border: 2px solid white;
+}
+
+.about .content {
+  border: 1px solid black;
+  background-color: white;
+}
+
+.about span {
+  padding: 0 10px;
+  font-size: 48px;
+  background-color: white;
+  /* font-family: "Raleway", sans-serif; */
+  color: var(--verde);
+}
+
+
 .about .content h3 {
+  margin-top: 30px;
   font-weight: 700;
   font-size: 26px;
   color: #555555;
+}
+
+.about .content p {
+  margin: 30px 0;
 }
 
 .about .content ul {
@@ -763,6 +804,26 @@ section {
 .about .content p:last-child {
   margin-bottom: 0;
 }
+
+#facts .span-h2, 
+#testimonials .span-h2, 
+#testimonials .span-h3 {
+  font-size: 36px;
+  max-width: fit-content;
+  /* font-family: "Raleway", sans-serif; */
+}
+
+#testimonials .span-h3 {
+  font-size: 30px;
+}
+
+#facts .span-p, #testimonials .span-p {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  margin-top: 10px;
+}
+
+
 
 /*--------------------------------------------------------------
 # Skills
@@ -803,10 +864,17 @@ section {
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
+
+
+.facts-box {
+  background-color: white;
+  border: 1px solid black;
+}
+
 .facts .counters span {
   font-size: 48px;
   display: block;
-  color: #34b7a7;
+  color: var(--verde);
 }
 
 .facts .counters p {
@@ -854,19 +922,19 @@ section {
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: #c8efea;
+  color: white;
   font-size: 26px;
 }
 
 .testimonials .testimonial-item .quote-icon-left {
   display: inline-block;
-  left: -5px;
+  left: -40px;
   position: relative;
 }
 
 .testimonials .testimonial-item .quote-icon-right {
   display: inline-block;
-  right: -5px;
+  right: -40px;
   position: relative;
   top: 10px;
 }
@@ -875,6 +943,8 @@ section {
   font-style: italic;
   margin: 0 auto 15px auto;
 }
+
+
 
 @media (min-width: 992px) {
   .testimonials .testimonial-item p {
