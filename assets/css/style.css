@@ -61,7 +61,7 @@ h6 {
 }
 
 h1 {
-display: inline;
+  display: inline;
   color: var(--primario);
   padding: 0 10px;
   font-size: 48px;
@@ -608,17 +608,32 @@ animation: 200s para infinite linear;
   z-index: 2;
 }
 
-.container-fotoluca {
+.fotoluca {
   position: relative;
-  z-index: 10;
-  border-radius: 30%;
+  border-radius: 50%;
+  border: 6px solid white;
   height: 350px;
   width: 350px;
-  display: flex;
-  justify-content: center;
+  background-image: url(../foto/luca.png);
+  background-position: 50%;
+  background-size: 100%;
+  background-repeat:no-repeat;
+  margin-bottom: 30px;
 }
 
-.container-fotoluca-box-up{
+.fotoluca::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -6px;
+  top: -6px;
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.185);
+}
+
+/* .container-fotoluca-box-up{
   position: absolute;
   top: 0px;
   z-index: -2;
@@ -638,13 +653,10 @@ animation: 200s para infinite linear;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 70%;
   background-color: #07411a75;
-  }
+  } */
 
-.fotoluca {
-  position: absolute;
-  top: 0px;
-  max-height: 330px;
-}
+
+
 
 
 
@@ -691,6 +703,7 @@ animation: 200s para infinite linear;
 
 @media (max-width: 992px) {
 
+
   #hero .container {
     padding-top: 58px;
   }
@@ -716,27 +729,6 @@ animation: 200s para infinite linear;
   }
 
 
-  .container-fotoluca {
-    height: 330px;
-    width: 330px;
-  }
-
-  .container-fotoluca-box-up{
-    height: 175px;
-    width: 330px;
-
-    }
-
-  .container-fotoluca-box-down{
-    height: 175px;
-    width: 330px;
-    }
-
-  .fotoluca {
-    position: absolute;
-    top: 0px;
-    max-height: 300px;
-  }
 
 }
 
