@@ -29,17 +29,11 @@ body {
 /* + */
 .black-box {
   border-radius: 20px;
-  color: white;
   background-color: rgba(7, 7, 7, 0.671);
   padding: 0 15px;
   }
 
-/* + */
-.white-box {
-  border-radius: 20px;
-  color: black;
-  background-color: rgba(255, 254, 254, 0.842);
-  }
+
 
 /* + */
 .margin-top{
@@ -64,6 +58,14 @@ h4,
 h5,
 h6 {
   font-family: "Raleway", sans-serif;
+}
+
+h1 {
+display: inline;
+  color: var(--primario);
+  padding: 0 10px;
+  font-size: 48px;
+  border-bottom: 2px solid white;
 }
 
 #main {
@@ -610,8 +612,8 @@ animation: 200s para infinite linear;
   position: relative;
   z-index: 10;
   border-radius: 30%;
-  height: 450px;
-  width: 450px;
+  height: 350px;
+  width: 350px;
   display: flex;
   justify-content: center;
 }
@@ -620,8 +622,8 @@ animation: 200s para infinite linear;
   position: absolute;
   top: 0px;
   z-index: -2;
-  height: 225px;
-  width: 450px;
+  height: 175px;
+  width: 350px;
   border-top-left-radius: 50%;
   border-top-right-radius: 70%;
   background-color: #2390bb38;
@@ -631,8 +633,8 @@ animation: 200s para infinite linear;
   position: absolute;
   bottom: 0px;
   z-index: -1;
-  height: 225px;
-  width: 450px;
+  height: 175px;
+  width: 350px;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 70%;
   background-color: #07411a75;
@@ -641,7 +643,7 @@ animation: 200s para infinite linear;
 .fotoluca {
   position: absolute;
   top: 0px;
-  max-height: 420px;
+  max-height: 330px;
 }
 
 
@@ -782,7 +784,8 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 50px;
+  color: white;
+  
 }
 
 .section-title h2 {
@@ -806,7 +809,7 @@ section {
 }
 
 .section-title p {
-  margin-bottom: 0;
+  margin-bottom: 70px;
 }
 
 /*--------------------------------------------------------------
@@ -863,7 +866,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# About
+# About - conosciamoci
 --------------------------------------------------------------*/
 
 .background-about {
@@ -883,6 +886,63 @@ section {
   border: 1px solid black;
 }
 
+
+.img-main {
+  position: relative;
+  z-index: -1;
+  max-height: 500px;
+  margin-bottom: 50px;
+}
+
+.img-out {
+  opacity: 0;
+  position: absolute;
+  z-index: 10;
+  height: 170px;
+  width: 200px;
+  border: 8px solid white;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards ;
+  animation-duration: 2s;
+}
+
+.img-out-1 {
+  transform: rotate(34deg) translate(-400px) rotate(-29deg) ;
+}
+
+.img-out-2 {
+  transform: translate(-350px);
+  animation-delay: 1.5s;
+}
+
+.img-out-3 {
+  transform: rotate(-34deg) translate(-400px) rotate(29deg);
+  animation-delay: 2s;
+}
+
+.img-out-4 {
+  transform: rotate(-34deg) translate(400px) rotate(29deg);
+}
+
+.img-out-5 {
+  transform: translate(350px);
+  animation-delay: 1.5s;
+}
+
+.img-out-6 {
+  transform: rotate(34deg) translate(400px) rotate(-29deg) ;
+  animation-delay: 2s;
+}
+
+
+@keyframes img-appear {
+  0% { opacity: 0}
+  100% { opacity: 1}
+}
+
+
+
 .black-box {
 border-radius: 20px;
 color: white;
@@ -896,14 +956,6 @@ background-color: rgba(7, 7, 7, 0.671);
 .about .content {
   border: 1px solid whiteblack;
   background-color: #CBCBCB;
-}
-
-.about h1 {
-  display: inline;
-  color: var(--primario);
-  padding: 0 10px;
-  font-size: 48px;
-  border-bottom: 2px solid white;
 }
 
 .about .my-p {
@@ -922,10 +974,6 @@ background-color: rgba(7, 7, 7, 0.671);
   margin: 30px 0;
 }
 
-.about .section-title{
-  color: white;
-  margin: 30px 0;
-}
 
 .about .content ul {
   list-style: none;
@@ -1071,7 +1119,7 @@ background-color: rgba(7, 7, 7, 0.671);
 
 .testimonials .testimonial-item .quote-icon-left {
   display: inline-block;
-  left: -40px;
+  left: -6px;
   position: relative;
 }
 
@@ -1114,12 +1162,12 @@ background-color: rgba(7, 7, 7, 0.671);
 
 /* + */
 .testimonials .testimonial-item .quote-icon-left {
-  left: -40px;
+  left: -20px;
 }
 
 /* + */
 .testimonials .testimonial-item .quote-icon-right {
-  right: -40px;
+  right: -20px;
   top: 10px;
 }
 
@@ -1213,15 +1261,11 @@ background-color: rgba(7, 7, 7, 0.671);
               -27px -27px 53px #403d3d;
 }
 
-/* / */
-.services .my-h2{
-  display: inline-block;
-  padding: 0 15px;
-}
 
 .services .my-p{
   display: inline-block;
   padding: 0 15px;
+  margin-top: 20px;
 }
 
 
