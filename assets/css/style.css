@@ -11,6 +11,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+  background-color: var(--sfondo);
 }
 
 /* + */
@@ -66,6 +67,21 @@ h1 {
   padding: 0 10px;
   font-size: 48px;
   border-bottom: 2px solid white;
+}
+
+h3 {
+  font-size: 18px;
+
+}
+
+/* + */
+li {
+  font-size: 18px;
+}
+
+/* + */
+.w-border { 
+  border: 6px solid white;
 }
 
 #main {
@@ -861,15 +877,6 @@ section {
 # About - conosciamoci
 --------------------------------------------------------------*/
 
-.background-about {
-  /* background-image: url(../foto/sotto_il_ponte.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position-y: -7%;
-  background-size:cover; */
-  background-color: var(--sfondo)
-}
-
 .backgroud-color-white {
   border-radius: 20px;
   color: white;
@@ -1239,20 +1246,61 @@ background-color: rgba(7, 7, 7, 0.671);
 }
 
 /*--------------------------------------------------------------
-# Services
+# Services - mostre
 --------------------------------------------------------------*/
 
 /* + */
-.background-services {
-  background-color: var(--sfondo);
-}
-
-
 .services .my-p{
   display: inline-block;
   padding: 0 15px;
   margin-top: 20px;
 }
+
+/* + */
+.rocca-row {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.rocca-row h3{
+width: 71%;
+}
+
+/* + */
+.img-rocca {
+  background-image: url(../foto/catello_rocca_2.jpg);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 380px;
+}
+
+/* + */
+.img-locandina {
+  position: absolute;
+  left: 61%;
+  top: 135px;
+  height: 400px;
+}
+
+@media screen and (max-width:1200px){
+
+  .img-locandina {
+  position: relative;
+  width: 100%;
+  height: auto;
+  left: 0%;
+  top: 0px;
+  }
+}
+
+
+
+
+
+
+
 
 
 .services .icon-box .icon {
@@ -1505,6 +1553,13 @@ background-color: rgba(7, 7, 7, 0.671);
 
 /* CAROSELLO - GALLERIA IMMAGINI */
    
+.gallery-carusel-img{
+  height: 200px;
+  width: 100%
+}
+
+
+
 
 
 /*--------------------------------------------------------------
