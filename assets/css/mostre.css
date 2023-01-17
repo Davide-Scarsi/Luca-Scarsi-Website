@@ -1,0 +1,181 @@
+/*--------------------------------------------------------------
+# Services - mostre
+--------------------------------------------------------------*/
+
+/* Inserito da me */
+    .services .my-p{
+        display: inline-block;
+        padding: 0 15px;
+        margin-top: 20px;
+    }
+
+    .rocca-row {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .rocca-row h3{
+    width: 71%;
+    }
+
+    .img-rocca {
+        background-image: url(../foto/catello_rocca_2.jpg);
+        background-position: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 380px;
+    }
+
+    .img-locandina {
+        position: absolute;
+        left: 61%;
+        top: 135px;
+        height: 400px;
+    }
+    
+    @media screen and (max-width:1200px){
+    
+        .img-locandina {
+        position: relative;
+        width: 100%;
+        height: auto;
+        left: 0%;
+        top: 0px;
+        }
+    }
+
+/* inserito da me - fine */
+  
+  
+  
+  
+  
+  
+  
+  
+  .services .icon-box .icon {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.3s;
+    position: relative;
+  }
+  
+  .services .icon-box .icon i {
+    font-size: 36px;
+    transition: 0.5s;
+    position: relative;
+  }
+  
+  .services .icon-box .icon svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .services .icon-box .icon svg path {
+    transition: 0.5s;
+    fill: #f5f5f5;
+  }
+  
+  .services .icon-box h4 {
+    font-weight: 600;
+    margin: 10px 0 15px 0;
+    font-size: 22px;
+  }
+  
+  .services .icon-box h4 a {
+    color: var(--primario);
+    transition: ease-in-out 0.3s;
+  }
+  
+  .services .icon-box p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  
+  .services .iconbox-blue {
+    width: 100%;
+  }
+  
+  .services .iconbox-blue i {
+    color: #47aeff;
+  }
+  
+  .services .iconbox-blue:hover .icon i {
+    color: #fff;
+  }
+  
+  .services .iconbox-blue:hover .icon path {
+    fill: #47aeff;
+  }
+  
+  .services .iconbox-orange i {
+    color: #ffa76e;
+  }
+  
+  .services .iconbox-orange:hover .icon i {
+    color: #fff;
+  }
+  
+  .services .iconbox-orange:hover .icon path {
+    fill: #ffa76e;
+  }
+  
+  .services .iconbox-pink i {
+    color: #e80368;
+  }
+  
+  .services .iconbox-pink:hover .icon i {
+    color: #fff;
+  }
+  
+  .services .iconbox-pink:hover .icon path {
+    fill: #e80368;
+  }
+  
+  .services .iconbox-yellow i {
+    color: #ffbb2c;
+  }
+  
+  .services .iconbox-yellow:hover .icon i {
+    color: #fff;
+  }
+  
+  .services .iconbox-yellow:hover .icon path {
+    fill: #ffbb2c;
+  }
+  
+  .services .iconbox-red i {
+    color: #ff5828;
+  }
+  
+  .services .iconbox-red:hover .icon i {
+    color: #fff;
+  }
+  
+  .services .iconbox-red:hover .icon path {
+    fill: #ff5828;
+  }
+  
+  .services .iconbox-teal i {
+    color: #11dbcf;
+  }
+  
+  .services .iconbox-teal:hover .icon i {
+    color: #fff;
+  }
+  
+  .services .iconbox-teal:hover .icon path {
+    fill: #11dbcf;
+  }
+  
+  .img-services {
+    max-height: 400px;
+  }
+  
